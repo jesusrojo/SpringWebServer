@@ -23,10 +23,6 @@ public class RouterController {
     }
 
 
-    @RequestMapping("/a")
-    public String routeA(){
-        return "aaaaaaaaaaaaaaa";
-    }
 
     @RequestMapping("/b")
     public String[] routeB(){return new String[]{"red","yellow", "green"};}
@@ -39,4 +35,19 @@ public class RouterController {
         results.add("Verde");
         return results;
     }
+
+    @RequestMapping("/d")
+    public List<String> routeD() {
+        List<String> results = new ArrayList<>();
+        results.add("Rojo");
+        results.add("Amarillo");
+        results.add("Verde");
+//          todo
+//        Response response =  new Response();
+//        response.set
+        return results;
+    }
+
+
+
 }
