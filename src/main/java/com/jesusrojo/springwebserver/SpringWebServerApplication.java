@@ -8,7 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringWebServerApplication {
 
     public static void main(String[] args) {
+        System.out.println("##### SpringWebServerApplication main START #####");
+
         SpringApplication.run(SpringWebServerApplication.class, args);
-        System.out.println("##### SpringWebServerApplication init... #####");
+
+        System.out.println("##### SpringWebServerApplication main END #####");
     }
 }
